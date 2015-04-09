@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XyErebus2", "XyErebus2\XyErebus2.vcxproj", "{C7A7A8AB-9606-4579-8F87-F50CBDF1F842}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickTest", "QuickTest\QuickTest.vcxproj", "{2D243369-3BF3-4FB5-802B-AC56E3E0FFA6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7A7A8AB-9606-4579-8F87-F50CBDF1F842} = {C7A7A8AB-9606-4579-8F87-F50CBDF1F842}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A7A8AB-9606-4579-8F87-F50CBDF1F842}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C7A7A8AB-9606-4579-8F87-F50CBDF1F842}.Debug|Win32.Build.0 = Debug|Win32
+		{C7A7A8AB-9606-4579-8F87-F50CBDF1F842}.Release|Win32.ActiveCfg = Release|Win32
+		{C7A7A8AB-9606-4579-8F87-F50CBDF1F842}.Release|Win32.Build.0 = Release|Win32
+		{2D243369-3BF3-4FB5-802B-AC56E3E0FFA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D243369-3BF3-4FB5-802B-AC56E3E0FFA6}.Debug|Win32.Build.0 = Debug|Win32
+		{2D243369-3BF3-4FB5-802B-AC56E3E0FFA6}.Release|Win32.ActiveCfg = Release|Win32
+		{2D243369-3BF3-4FB5-802B-AC56E3E0FFA6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

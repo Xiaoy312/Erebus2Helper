@@ -27,6 +27,13 @@
 *.out
 *.app
 
+# Visual Studio
+*.opensdf
+*.sdf
+*.suo
+ipch/
+[Dd]ebug/
+
 # =========================
 # Operating System Files
 # =========================
