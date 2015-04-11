@@ -1,6 +1,7 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "stdafx.h"
 #include "UI/Console.h"
+#include "Services\Packet\PacketAnalyzer.h"
 
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
@@ -11,6 +12,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	{
 	case DLL_PROCESS_ATTACH:
 	    Console::Initialize();
+        PacketAnalyzer::InstallHook();
         break;
     case DLL_PROCESS_DETACH:
 	case DLL_THREAD_ATTACH:
