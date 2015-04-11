@@ -79,6 +79,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Services\Hack\Patch.h" />
+    <ClInclude Include="Services\Hack\MapNuke.h" />
     <ClInclude Include="Services\Packet\PacketAnalyzer.h" />
     <ClInclude Include="Tools\Detour.h" />
     <ClInclude Include="UI\Console.h" />
@@ -86,6 +88,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Services\Hack\Patch.cpp" />
+    <ClCompile Include="Services\Hack\MapNuke.cpp" />
     <ClCompile Include="Services\Packet\PacketAnalyzer.cpp" />
     <ClCompile Include="UI\Console.cpp" />
     <ClCompile Include="dllmain.cpp">

@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "..\..\stdafx.h" // intellisense is drunk
 #include "..\..\Tools\Detour.h"
 #include "PacketAnalyzer.h"
 #include <sstream>

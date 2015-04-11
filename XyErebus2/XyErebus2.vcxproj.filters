@@ -33,6 +33,12 @@
     <ClInclude Include="Services\Packet\PacketAnalyzer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Services\Hack\MapNuke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Hack\Patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -48,6 +54,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Services\Packet\PacketAnalyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Hack\MapNuke.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Hack\Patch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
