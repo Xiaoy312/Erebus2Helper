@@ -33,6 +33,7 @@
 *.suo
 ipch/
 [Dd]ebug/
+[Rr]elease/
 
 # =========================
 # Operating System Files
