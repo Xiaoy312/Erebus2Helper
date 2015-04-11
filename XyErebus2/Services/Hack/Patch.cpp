@@ -57,21 +57,34 @@ public:
 	}
 };
 
-
 void AlwaysMaxAttackPower(bool enabled)
 {
-    //006934B0 - 83 EC 08              - sub esp,08
+    //006961F1 - E8 BAD2FFFF           - call 006934B0 ; Skill::GetAttackPower();
 
-    //006934B0 - B0 64                 - mov al,64
-    //006934B2 - C3                    - ret 
-
-    HotPatch<3> aob("\x83\xEC\x08", "\xB0\x64\xC3", 0x006934B0);
-
-    aob.Enable(enabled);
+    /* 
+    006934B0 - 83 EC 08              - sub esp,08
+    changed to
+    006934B0 - B0 64                 - mov al,64
+    006934B2 - C3                    - ret 
+    */
+    HotPatch<3>("\x83\xEC\x08", "\xB0\x64\xC3", 0x006934B0).Enable(enabled);
 }
-
+void UnlimitedZoom(bool enabled)
+{
+    // global variable float 0xD25CE4 : camera distance 
+    //004155E8 - D9 98 DC000000  - fstp dword ptr [eax+000000DC] //scrolling
+    //0041565A - D9 99 DC000000  - fstp dword ptr [ecx+000000DC] //capped at 2500.0f 
+    //004157D2 - D9 99 DC000000  - fstp dword ptr [ecx+000000DC] //capped at 2500.0f
+    //0044D9B1 - D9 99 DC000000  - fstp dword ptr [ecx+000000DC] //capped at 2500.0f
+    
+    //just nop all of them
+    HotPatch<6>("\xD9\x99\xDC\x00\x00\x00", "", 0x0041565A).Enable(enabled);
+    HotPatch<6>("\xD9\x99\xDC\x00\x00\x00", "", 0x004157D2).Enable(enabled);
+    HotPatch<6>("\xD9\x99\xDC\x00\x00\x00", "", 0x0044D9B1).Enable(enabled);
+}
 
 void Patch::Initialize()
 {
     AlwaysMaxAttackPower(true);
+    UnlimitedZoom(true);
 }
