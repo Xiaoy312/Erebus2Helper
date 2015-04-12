@@ -7,6 +7,11 @@ WNDPROC originalProc;
 
 void Console::Initialize()
 {
+#if !defined(_DEBUG)
+    return;
+#endif
+
+
     if (!AllocConsole())
     {
             MessageBox(0, "Failed to alloc console", "Console Initialization Error", 0);
