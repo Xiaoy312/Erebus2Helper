@@ -42,6 +42,7 @@ void ServiceManager::Initialize()
     RegisterService<InventoryHelper>();
 
     InitializeServices();
+    InitializeUI();
 }
 void ServiceManager::StartServices()
 {
