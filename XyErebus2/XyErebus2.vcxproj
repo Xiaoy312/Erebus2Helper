@@ -79,6 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Services\Hack\InventoryHelper.h" />
     <ClInclude Include="Services\Hack\Patch.h" />
     <ClInclude Include="Services\Hack\MapNuke.h" />
     <ClInclude Include="Services\Packet\PacketAnalyzer.h" />
@@ -88,6 +89,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Services\Hack\InventoryHelper.cpp" />
     <ClCompile Include="Services\Hack\Patch.cpp" />
     <ClCompile Include="Services\Hack\MapNuke.cpp" />
     <ClCompile Include="Services\Packet\PacketAnalyzer.cpp" />
