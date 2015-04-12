@@ -52,6 +52,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XYEREBUS2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -79,6 +80,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Services\ServiceBase.h" />
+    <ClInclude Include="Services\ServiceManager.h" />
     <ClInclude Include="Services\Hack\InventoryHelper.h" />
     <ClInclude Include="Services\Hack\Patch.h" />
     <ClInclude Include="Services\Hack\MapNuke.h" />
@@ -89,6 +92,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Services\ServiceManager.cpp" />
     <ClCompile Include="Services\Hack\InventoryHelper.cpp" />
     <ClCompile Include="Services\Hack\Patch.cpp" />
     <ClCompile Include="Services\Hack\MapNuke.cpp" />

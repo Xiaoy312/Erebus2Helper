@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../../stdafx.h" // Intellisense is drunk
+#include "Services\ServiceBase.h"
 #include "InventoryHelper.h"
 #include "../../Tools/Detour.h"
 

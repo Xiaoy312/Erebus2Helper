@@ -1,7 +1,7 @@
 #pragma once
-class PacketAnalyzer
+class PacketAnalyzer : public ServiceBase
 {
 public:
-    static void InstallHook();
+    void Initialize();
 };
 

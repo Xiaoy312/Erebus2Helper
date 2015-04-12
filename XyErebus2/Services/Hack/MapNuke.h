@@ -1,7 +1,7 @@
 #pragma once
-class MapNuke
+class MapNuke : public ServiceBase
 {
 public:
-    static void Initialize();
+    void Initialize();
 };
 

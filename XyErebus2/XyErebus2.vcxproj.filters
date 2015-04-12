@@ -42,6 +42,12 @@
     <ClInclude Include="Services\Hack\InventoryHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Services\ServiceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ServiceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -66,6 +72,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Services\Hack\InventoryHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ServiceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

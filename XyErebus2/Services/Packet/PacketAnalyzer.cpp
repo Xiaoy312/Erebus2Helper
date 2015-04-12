@@ -114,7 +114,7 @@ void __declspec(naked) Hook_SendPacket()
     }
 }
 
-void PacketAnalyzer::InstallHook()
+void PacketAnalyzer::Initialize()
 {
     printf("Installing Hook\n");
 	const int JumpInstructionSize = 1+4;

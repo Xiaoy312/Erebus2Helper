@@ -1,7 +1,7 @@
 #pragma once
-class InventoryHelper
+class InventoryHelper : public ServiceBase
 {
 public:
-    static void Initialize();
+    void Initialize();
 };
 

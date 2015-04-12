@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "../ServiceBase.h"
 #include "MapNuke.h"
 #include "../../Tools/Detour.h"
 

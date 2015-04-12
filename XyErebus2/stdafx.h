@@ -11,7 +11,12 @@
 // Windows Header Files:
 #include <windows.h>
 
-
-
 // TODO: reference additional headers your program requires here
 #include <stdio.h>
+#include <vector>
+#include <map>
+
+#include <typeinfo>
+#include <type_traits>
+
+#include "Services\ServiceBase.h"

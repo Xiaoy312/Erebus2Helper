@@ -1,7 +1,7 @@
-#pragma once
-class Patch
+#pragma 
+class Patch : public ServiceBase
 {
 public:
-    static void Initialize();
+    void Initialize();
 };
 
